@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>erin.psotka@beamsuntory.com</email>
+    <name>Knob Creek Global Mktg</name>
+    <queueMembers>
+        <users>
+            <user>courtney.king@beamsuntory.com</user>
+            <user>erin.psotka@beamsuntory.com</user>
+            <user>kelsey.connor@beamsuntory.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>MarketingPlan__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Program__c</sobjectType>
+    </queueSobject>
+</Queue>
