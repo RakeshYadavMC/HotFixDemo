@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>hallie.hastings@beamsuntory.com</email>
+    <name>Jim Beam Flavors - Commercial</name>
+    <queueMembers>
+        <users>
+            <user>ashlea.derkits@beamsuntory.com</user>
+            <user>autumn.barton@beamsuntory.com</user>
+            <user>catherine.krzyskowski@beamsuntory.com</user>
+            <user>hallie.hastings@beamsuntory.com</user>
+            <user>lisa.gedeon@beamsuntory.com</user>
+            <user>stephanie.warren@beamsuntory.com</user>
+            <user>tess.abraham@beamsuntory.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>MarketingPlan__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Program__c</sobjectType>
+    </queueSobject>
+</Queue>

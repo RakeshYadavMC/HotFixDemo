@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>brian.sturges@makersmark.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>rachel.ford@makersmark.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Send an email to Makers Mark diplomats if the Barrel is for National Account</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Account_Application__c.National_Account_Flag__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account_Application__c.Brand__c</field>
+                <operation>equals</operation>
+                <value>Makers Mark</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account_Application__c.Status__c</field>
+                <operation>equals</operation>
+                <value>Pending Approval</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>RejectRecord</ifCriteriaNotMet>
+        <label>Email to Makers Mark Diplomats</label>
+        <name>Email_to_Makers_Mark_Diplomats</name>
+    </approvalStep>
+    <description>For National Accounts only</description>
+    <emailTemplate>Single_Barrel/Makers_Mark_Account_Approval_Request</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Account_Application__c.Brand__c</field>
+            <operation>equals</operation>
+            <value>Makers Mark</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account_Application__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Approved</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Application_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Account_Rejected_Email1</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Application_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Makers Mark Account Approval3</label>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>
