@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>info@kilbeggandistillery.com</email>
+    <name>Kilbeggan Distillery</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>ALL_Queues</publicGroup>
+        </publicGroups>
+        <users>
+            <user>denise.heslin@beamsuntory.com</user>
+            <user>gordon.paul@beamsuntory.com</user>
+            <user>jacqueline.mitchell@beamsuntory.com</user>
+            <user>raquel.hernandez@beamsuntory.com</user>
+            <user>ruth.wyer@beamsuntory.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>
