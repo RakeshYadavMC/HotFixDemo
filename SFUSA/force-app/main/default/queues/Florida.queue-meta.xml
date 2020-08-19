@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>nicole.aritzmendi@beamsuntory.com</email>
+    <name>Florida</name>
+    <queueMembers>
+        <users>
+            <user>christine.bradt@beamsuntory.com</user>
+            <user>dante.fiocca@beamsuntory.com</user>
+            <user>jake.tindol@beamsuntory.com</user>
+            <user>jennifer.christman@beamsuntory.com</user>
+            <user>joseph.barrios@beamsuntory.com</user>
+            <user>maya.rubalcaba@beamsuntory.com</user>
+            <user>nicole.aritzmendi@beamsuntory.com</user>
+            <user>rachel.harris@beamsuntory.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>MarketingPlan__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Program__c</sobjectType>
+    </queueSobject>
+</Queue>
