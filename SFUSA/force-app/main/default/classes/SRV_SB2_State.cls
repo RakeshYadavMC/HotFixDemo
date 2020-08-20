@@ -1,5 +1,5 @@
 /**
-    Commit for Hotfix Demo 1
+    Commit for Hotfix Issue 1
     @company : Copyright © 2020, BeamSuntory
     All rights reserved.
     Redistribution and use in source form, with or without modification, are prohibited without the express written consent of BeamSuntory,Inc.
