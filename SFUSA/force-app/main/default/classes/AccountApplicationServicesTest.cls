@@ -9,6 +9,7 @@ private class AccountApplicationServicesTest {
 		insert u;
 
 		// create application question set
+		// SB-272 Hotfix #1 Tested
 		Application_Question_Set__c makersMarkQuestionSet = new Application_Question_Set__c();
 		makersMarkQuestionSet.Brand__c = 'Makers Mark';
 		makersMarkQuestionSet.Name = 'Maker\'s Mark Domestic';
