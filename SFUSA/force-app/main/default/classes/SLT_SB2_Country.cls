@@ -1,4 +1,5 @@
-/** Testing for hotfix
+/**
+    code commit to feature branch1
     @company : Copyright © 2020, BeamSuntory
     All rights reserved.
     Redistribution and use in source form, with or without modification, are prohibited without the express written consent of BeamSuntory,Inc.
